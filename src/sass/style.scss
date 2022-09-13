@@ -15,9 +15,18 @@
     margin: 0 auto;
 }
 
+.divided {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin: 25px auto 0 auto;
+}
+
 @import 'block/promo';
 @import 'block/title';
 @import 'block/button';
 @import 'block/link';
 @import 'block/myself';
 @import 'block/menu';
+@import 'block/about';
+@import 'block/experience';

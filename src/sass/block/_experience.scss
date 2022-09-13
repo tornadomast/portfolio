@@ -1,0 +1,15 @@
+.experience {
+    padding-top: 120px;
+    &__subtitle {
+        position: relative;
+        text-align: center;
+        @include circle;
+        &:before {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+}
