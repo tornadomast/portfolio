@@ -1,0 +1,96 @@
+@media (max-width: 1200px)
+    .menu
+        &_link
+            font-size: 13px
+        &_item
+            padding-right: 20px
+    .promo
+        .header
+            font-size: 50px
+        .subheader_text
+            font-size: 30px
+
+@media (max-width: 991px)
+    .menu
+        &_link
+            font-size: 11px
+        &_item
+            padding-right: 9px
+    .subheader
+        &_tel
+            font-size: 16px
+    .promo
+        .header
+            font-size: 41px
+        .subheader_text
+            font-size: 23px
+        &_text
+            font-size: 13px
+    .cause
+        .descr
+            width: 200px
+        .block
+            align-items: flex-start
+
+    .choice
+        &_img
+            left: -45px
+        
+    .wrapper
+        display: block
+        align-items: center
+    .links
+        &_block
+            display: none
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        background-color: rgb(0,0,0, .8)
+        transition: 0.8s all
+        &_active
+            left: 0
+        &_link
+            font-size: 18px
+        &_item
+            border-right: none
+            margin-top: 15px
+
+    .choice
+        margin-bottom: 10px
+        &_img
+            display: none
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        width: 26px
+        top: 50%
+        transform: translateY(-50%)
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-bottom: 3px
+            transition-delay: 0.7s all
+        &_active
+            span
+                margin-top: -4px
+                &:nth-child(1)
+                    transform: rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: rotate(45deg)
+    .hamburger
+        display: block
