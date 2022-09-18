@@ -22,6 +22,7 @@
         &:hover {
             path {
                 fill: firebrick;
+                transform: skew(1.5);
             }
         }
     }
@@ -44,8 +45,7 @@
             
             &:hover {
                 svg {
-                    width: 22px;
-                    height: 22px;
+                    transform: scale(1.4);
                     transition: all 0.5s;
                 }
                 path {
@@ -56,8 +56,7 @@
         &_insta {
             &:hover {
                 svg {
-                    width: 22px;
-                    height: 22px;
+                    transform: scale(1.4);
                     transition: all 0.5s;
                 }
                 path {
@@ -68,8 +67,7 @@
         &_facebook {
             &:hover {
                 svg {
-                    width: 22px;
-                    height: 22px;
+                    transform: scale(1.4);
                     transition: all 0.5s;
                 }
                 path {
@@ -89,6 +87,10 @@
         line-height: 36px;
         margin-bottom: 15px;
         text-transform: uppercase;
+        &:hover {
+            transform: scale(1.2) ;
+            transition: all 0.6s;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -107,10 +109,6 @@
         a {
             color: #fff;
             text-decoration: none;
-            &:hover {
-                transition: all 0.5s;
-                color: firebrick;
-            }
         }
                 
     }

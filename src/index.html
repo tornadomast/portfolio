@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <base href="" target="_blank">
 </head>
 <body>
    
@@ -51,7 +50,7 @@
             
             <div class="promo__btns">
                 <a href="#" class="promo__link btn">Portfolio</a>
-                <a href="#" class="promo__link">About Me</a>
+                <a href="#about" class="promo__link">About Me</a>
             </div>
             <aside>
                 <div class="link-wrap">
@@ -71,7 +70,7 @@
         
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__content">
                 <div class="about-photo">
@@ -310,7 +309,7 @@
             <h2 class="title title_fs36 experience__title">My works</h2>
             <div class="divided"></div>
             <div class="portfolio__wrapper">
-                <a href="/uber" class="portfolio__item">
+                <a href="./uber" class="portfolio__item">
                     <img src="./img/uber.jpg" alt="uber">
                 </a><a href="http://www.mytestproject-js.com.ua/"  class="portfolio__item">
                     <img src="./img/pulse.jpg" alt="pulse">
@@ -359,6 +358,54 @@
                     <div class="price__wrapper-cost"> individually</div>
                     <div class="price__wrapper-subtitle">I will create a design for your website/application...</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts-photo">
+                    <img src="./img/3-min.jpg" alt="photo">
+                </div>
+                <div class="contacts-items">
+                    <div class="title title_fs16 promo__subtitle">Contacts</div>
+                    <h2 class="title title_fs36">Get into contact with me</h2>
+                    <div class="divided"></div>
+                    <div class="title title_fs16 contacts-text">In any way convenient for you:</div>
+                    <div class="contacts__social">
+                        <a href="#" class="contacts-link">
+                            <img src="./icons/Facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="contacts-link">
+                            <img src="./icons/Instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="contacts-link">
+                            <img src="./icons/Github.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="title title_fs16 contacts-text">
+                        Or leave your details and I will write to you
+                    </div>
+                    <form action="" class="contacts__form">
+                        <div class="contacts__input">
+                            <input type="text" id="name" name="name" placeholder="name">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="contacts__input">
+                            <input type="email" id="email" name="email" placeholder="example@com.ua">
+                            <label for="email">Your email</label>
+                        </div>
+                        <div class="contacts__textarea">
+                            <textarea name="text" id="text" placeholder="type text..."></textarea>
+                            <label for="text">Enter your message</label>
+                        </div>
+                        <div> <button class="contacts__btn btn">Send a message</button>
+                        </div>
+                       
+                    </form>
+                </div>
+                
             </div>
         </div>
     </section>
