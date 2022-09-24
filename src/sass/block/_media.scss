@@ -58,6 +58,16 @@
             justify-content: space-around;
         }
     }
+    .contacts {
+        padding: 40px;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 400px 520px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/250px 250px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .container {
@@ -113,6 +123,22 @@
             font-size: 30px;
         }
     }
+
+    .contacts {
+        &-photo {
+            display: none;
+        }
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 720px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/300px 300px;
+        }
+        &__triggers {
+            justify-content: space-around;
+        }
+    }
     
     
 }
@@ -150,6 +176,16 @@
                 justify-content: center;
             }
             
+        }
+    }
+    .contacts {
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 500px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/225px 225px;
+            justify-content: space-around;
         }
     }
     .title {
@@ -249,7 +285,7 @@
             grid-template-columns: repeat(auto-fit, 280px);
             row-gap: 50px;
             &-item {
-                grid-template: 30px 30px/280px 0px;
+                grid-template: 30px 30px/250px 0px;
             }
             
         }
@@ -289,6 +325,41 @@
         &__social {
             left: 60%;
             bottom: 60px;
+        }
+    }
+    .contacts {
+        padding: 40px 0 20px 0;
+        &__wrapper {
+            padding: 0;
+            grid-template-columns: 300px;
+        }
+        &__form {
+            grid-template: 45px 190px 45px/150px 150px;
+            justify-content: space-around;
+        }
+        .title {
+            &_fs36 {
+                font-size: 22px;
+            }
+        }
+        &__input {
+            input {
+                font-size: 11px;
+            }
+        }
+        &__triggers {
+            grid-template-columns: 260px;
+            grid-template-rows: minmax(60px, auto);
+            text-align: center;
+        }
+        &__policy {
+            margin-left: 0;
+            grid-row: 1;
+        }
+    }
+    .policy {
+        container {
+            width: 320px;
         }
     }
 }
