@@ -245,10 +245,11 @@
     }
     .price {
         &__wrapper {
+            margin-top: 20px;
             grid-template-columns: repeat(auto-fit, 280px);
-            row-gap: 45px;
+            row-gap: 50px;
             &-item {
-                grid-template: 21px 21px/190px 0px;
+                grid-template: 30px 30px/250px 0px;
             }
             
         }
