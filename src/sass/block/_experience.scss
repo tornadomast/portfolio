@@ -29,7 +29,7 @@
                 height: 15px;
                 border-radius: 100%;
                 background: $main-color;
-                left: -35px;
+                left: -15px;
                 top: 8px;
 
             }
@@ -46,7 +46,7 @@
                 height: calc(100% + 16px);
                 position: absolute;
                 top: -16px;
-                left: -60px;
+                left: -40px;
                 background-color: #000;
             }
             
@@ -57,10 +57,10 @@
         &:before {
             content: '';
             height: 1px;
-            width: 98px;
+            width: 76px;
             position: absolute;
             top: 68px;
-            left: -60px;
+            left: -39px;
             background-color: #000;
         }
         &-head {
