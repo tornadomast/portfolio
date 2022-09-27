@@ -46,6 +46,9 @@
             top: -9px;
             left: 12px;
             padding: 0 8px;
+            .error {
+                margin-top: 10px;
+            }
         }
     }
     &__textarea {
@@ -84,6 +87,7 @@
         margin-left: 35px;
         input {
             margin-right: 10px;
+            cursor: pointer;
         }
         span {
             font-weight: 500;

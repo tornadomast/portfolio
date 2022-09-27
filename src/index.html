@@ -18,12 +18,12 @@
         <div class="menu__block">
             <nav>
                 <ul class="menu__list">
-                    <li class="menu__link"><a href="#">About Me</a></li>
-                    <li class="menu__link"><a href="#">my experience</a></li>
-                    <li class="menu__link"><a href="#">my skills</a></li>
-                    <li class="menu__link"><a href="#">my works</a></li>
-                    <li class="menu__link"><a href="#">price list</a></li>
-                    <li class="menu__link"><a href="#">contacts</a></li>
+                    <li class="menu__link"><a href="#about" id="1">About Me</a></li>
+                    <li class="menu__link" ><a href="#experience" id="2">my experience</a></li>
+                    <li class="menu__link" ><a href="#skills" id="3">my skills</a></li>
+                    <li class="menu__link" ><a href="#portfolio"id="4">my works</a></li>
+                    <li class="menu__link" ><a href="#price" id="5">price list</a></li>
+                    <li class="menu__link" ><a href="#contacts" id="6">contacts</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -49,7 +49,7 @@
                 <h1 class="title title_fs48 promo__title">I'm a front-end developer from Brovary </h1>
             
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Portfolio</a>
+                <a href="#portfolio" class="promo__link btn">Portfolio</a>
                 <a href="#about" class="promo__link">About Me</a>
             </div>
             <aside>
@@ -125,7 +125,7 @@
         </div>
     </section> 
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <div class="container">
                 <div class="title title_fs16 experience__subtitle">Experience</div>
                     <h2 class="title title_fs36 experience__title">How will I be useful</h2>
@@ -205,7 +205,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="title title_fs16 experience__subtitle">Skills</div>
             <h2 class="title title_fs36 experience__title">What tools do I use at work</h2>
@@ -303,27 +303,27 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="title title_fs16 experience__subtitle">Portfolio</div>
             <h2 class="title title_fs36 experience__title">My works</h2>
             <div class="divided"></div>
             <div class="portfolio__wrapper">
-                <a href="./uber" class="portfolio__item">
+                <a href="./links/uber/" class="portfolio__item">
                     <img src="./img/uber.jpg" alt="uber">
-                </a><a href="http://www.mytestproject-js.com.ua/"  class="portfolio__item media">
+                </a><a href="./links/pulse"  class="portfolio__item media">
                     <img src="./img/pulse.jpg" alt="pulse">
                 </a><a href="#" class="portfolio__item vertical">
                     <img src="./img/plans.jpg" alt="plans">
                 </a>
-                <a href="./wordpress/src/" class="portfolio__item horizontal">
+                <a href="./links/wordpress/" class="portfolio__item horizontal">
                     <img src="./img/mac.jpg" alt="mac">
                 </a>
             </div>
         </div>
     </section>
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="title title_fs16 experience__subtitle">Price-list</div>
             <div class="divided"></div>
@@ -362,7 +362,7 @@
         </div>
     </section> 
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts-photo">
@@ -387,36 +387,40 @@
                     <div class="title title_fs16 contacts-text">
                         Or leave your details and I will write to you
                     </div>
-                    <form action="" class="contacts__form">
+                    <form  action="#" class="contacts__form" id="send">
                         <div class="contacts__input">
-                            <input type="text" id="name" name="name" placeholder="name">
-                            <label for="name">Your name</label>
+                            <input required  name="name" type="text" placeholder="name">
+                            <label for="name">Your name <br></label>
                         </div>
                         <div class="contacts__input">
-                            <input type="email" id="email" name="email" placeholder="example@com.ua">
-                            <label for="email">Your email</label>
+                            <input required  name="email" type="email" placeholder="example@com.ua">
+                            <label for="email">Your email<br></label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text" placeholder="type text..."></textarea>
-                            <label for="text">Enter your message</label>
+                            <textarea required name="comment" placeholder="type text..."></textarea>
+                            <label for="comment">Enter your message</label>
                         </div>
                         <div class="contacts__triggers">
-                            <div> <button class="contacts__btn btn">Send a message</button>
+                            <div> <button id="consult" class="contacts__btn btn">Send a message</button>
                             </div>
                             <div class="contacts__policy">
-                                <input required type="checkbox"> <span>I agree <a href="./policy.html">with the privacy policy</a> </span>
+                                <input required name="agree" id="agree" type="checkbox"> <span>I agree <a href="./policy.html">with the privacy policy</a> </span>
+                                
                             </div>
                             
                         </div>
-                        
-                       
                     </form>
                 </div>
                 
             </div>
         </div>
     </section> 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/scriptJq.js"></script>
     <script src="./js/script.js"></script>
+    
 </body>
 
 </html>

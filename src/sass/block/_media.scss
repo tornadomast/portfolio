@@ -357,11 +357,15 @@
             grid-row: 1;
         }
     }
-    .policy {
-        container {
-            width: 320px;
-        }
-    }
+    
+}
+.wrapper {
+    padding: 10px 0 20px 0;
+    background-color: beige;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
     
