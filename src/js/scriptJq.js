@@ -1,21 +1,4 @@
 $().ready(function() {
-    // $("#send").validate({
-    //     rules: {
-    //       name: {
-    //         required: true,
-    //         minlength: 3
-    //       },
-    //       email: {
-    //         required: true,
-    //         email: true
-    //       },
-    //       agree: {
-    //         required: true},
-    //       comment: {
-    //         required: true
-    //       }
-    //     }
-    //     });
 
     $('#send').submit(function(e) {
         e.preventDefault();
