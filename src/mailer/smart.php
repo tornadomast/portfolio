@@ -30,7 +30,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Letter';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+		Вам прийшов лист  <br> 
 	Имя: ' . $name . ' <br>
 	E-mail: ' . $email . ' <br>
 	Text: ' . $textin . '' ;
